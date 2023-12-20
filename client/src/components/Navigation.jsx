@@ -4,19 +4,19 @@ export default function Navigation() {
   const currentPage = useLocation().pathname;
 
   return (
-    <ul className="navTabs">
-      <li className="navItem">
+    <ul className="">
+      <li className="btn">
         <Link
           to="/"
-          className={currentPage === "/" ? "navLink active" : "navLink"}
+          className={currentPage === "/" ? "btn-active" : ""}
         >
           Home
         </Link>
       </li>
-      <li className="navItem">
+      <li className="btn">
         <Link
           to="/login"
-          className={currentPage === "/login" ? "navLink active" : "navLink"}
+          className={currentPage === "/login" ? "btn-active" : ""}
         >
           Login
         </Link>
